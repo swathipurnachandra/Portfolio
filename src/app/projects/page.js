@@ -74,7 +74,7 @@ export default function Projects() {
                         {projects.map((project, index) => (
                             <div
                                 key={index}
-                                className="group relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
+                                className="group relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden hover:scale-[1.02]"
                             >
                                 {/* Red accent border on bottom-left */}
                                 <div className="absolute bottom-0 left-0 w-1 h-32 bg-linear-to-t from-pink-500 to-transparent rounded-bl-2xl"></div>
@@ -125,7 +125,7 @@ export default function Projects() {
                     </div>
 
                     {/* Call to Action */}
-                    <div className="mt-16 text-center relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-8 shadow-lg overflow-hidden">
+                    <div className="mt-16 text-center relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden hover:scale-[1.01]">
                         <div className="absolute bottom-0 left-0 w-1 h-32 bg-linear-to-t from-pink-500 to-transparent rounded-bl-2xl"></div>
                         <h2 className="text-3xl font-bold mb-4 text-gray-900">Want to see more?</h2>
                         <p className="text-gray-700 mb-6">

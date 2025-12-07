@@ -108,7 +108,7 @@ export default function Skills() {
                         {skillCategories.map((category, idx) => {
                             const colors = getColorClasses(category.color);
                             return (
-                                <div key={idx} className="relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-8 shadow-lg overflow-hidden">
+                                <div key={idx} className="relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden group">
                                     <div className="absolute bottom-0 left-0 w-1 h-32 bg-linear-to-t from-pink-500 to-transparent rounded-bl-2xl"></div>
                                     <h2 className="text-3xl font-bold mb-6 text-gray-900">
                                         {category.title}
@@ -120,9 +120,9 @@ export default function Skills() {
                                                     <span className="text-gray-900 font-medium">{skill.name}</span>
                                                     <span className="text-gray-600">{skill.level}%</span>
                                                 </div>
-                                                <div className="w-full bg-gray-200 rounded-full h-2.5">
+                                                <div className="w-full bg-gray-200 rounded-full h-1.5">
                                                     <div
-                                                        className="bg-pink-500 h-2.5 rounded-full transition-all duration-1000 ease-out"
+                                                        className="bg-pink-500 h-1.5 rounded-full transition-all duration-1000 ease-out"
                                                         style={{ width: `${skill.level}%` }}
                                                     ></div>
                                                 </div>
@@ -135,7 +135,7 @@ export default function Skills() {
                     </div>
 
                     {/* Learning Section */}
-                    <div className="mt-12 relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-8 shadow-lg overflow-hidden">
+                    <div className="mt-12 relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden hover:scale-[1.01]">
                         <div className="absolute bottom-0 left-0 w-1 h-32 bg-linear-to-t from-pink-500 to-transparent rounded-bl-2xl"></div>
                         <h2 className="text-3xl font-bold mb-6 text-gray-900">Currently Learning</h2>
                         <div className="grid md:grid-cols-3 gap-6">
@@ -153,7 +153,7 @@ export default function Skills() {
                     </div>
 
                     {/* Certifications */}
-                    <div className="mt-12 relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-8 shadow-lg overflow-hidden">
+                    <div className="mt-12 relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden hover:scale-[1.01]">
                         <div className="absolute bottom-0 left-0 w-1 h-32 bg-linear-to-t from-pink-500 to-transparent rounded-bl-2xl"></div>
                         <h2 className="text-3xl font-bold mb-6 text-gray-900">Certifications & Achievements</h2>
                         <div className="space-y-4">
@@ -186,7 +186,7 @@ export default function Skills() {
                     </div>
 
                     {/* Call to Action */}
-                    <div className="mt-12 text-center relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-8 shadow-lg overflow-hidden">
+                    <div className="mt-12 text-center relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden hover:scale-[1.01]">
                         <div className="absolute bottom-0 left-0 w-1 h-32 bg-linear-to-t from-pink-500 to-transparent rounded-bl-2xl"></div>
                         <h2 className="text-3xl font-bold mb-4 text-gray-900">Interested in working together?</h2>
                         <p className="text-gray-700 mb-6">

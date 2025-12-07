@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Navigation() {
     return (
-        <nav className="fixed top-0 w-full bg-black/90 backdrop-blur-md z-50 border-b border-pink-500/30 shadow-lg shadow-pink-500/10">
+        <nav className="sticky top-0 w-full bg-black/90 backdrop-blur-md z-50 border-b border-pink-500/30 shadow-lg shadow-pink-500/10">
             <div className="max-w-6xl mx-auto px-6 py-4">
                 <div className="flex justify-between items-center">
                     <Link href="/">
