@@ -1,19 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0a0a;
+  --background: #000000;
   --foreground: #ffffff;
-  --neon-pink: #ff006e;
-  --neon-pink-bright: #ff1493;
-  --neon-pink-glow: rgba(255, 0, 110, 0.5);
+  --pink: #ff69b4;
+  --pink-dark: #ff1493;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-roboto);
-  --color-neon-pink: var(--neon-pink);
-  --color-neon-pink-bright: var(--neon-pink-bright);
+  --color-pink: var(--pink);
+  --color-pink-dark: var(--pink-dark);
 }
 
 body {
@@ -22,80 +21,7 @@ body {
   font-family: var(--font-roboto), 'Roboto', sans-serif;
 }
 
-/* Neon glow effects */
-.neon-glow {
-  text-shadow: 0 0 10px var(--neon-pink-glow),
-    0 0 20px var(--neon-pink-glow),
-    0 0 30px var(--neon-pink-glow),
-    0 0 40px var(--neon-pink);
-}
-
-.neon-border {
-  box-shadow: 0 0 10px var(--neon-pink-glow),
-    0 0 20px var(--neon-pink-glow),
-    inset 0 0 10px var(--neon-pink-glow);
-}
-
 /* Animations */
-@keyframes glow {
-
-  0%,
-  100% {
-    text-shadow: 0 0 30px rgba(255, 0, 110, 0.8), 0 0 60px rgba(255, 0, 110, 0.5), 0 0 100px rgba(255, 0, 110, 0.3);
-  }
-
-  50% {
-    text-shadow: 0 0 40px rgba(255, 0, 110, 1), 0 0 80px rgba(255, 0, 110, 0.7), 0 0 120px rgba(255, 0, 110, 0.5);
-  }
-}
-
-@keyframes glitch-1 {
-
-  0%,
-  100% {
-    transform: translate(0);
-  }
-
-  20% {
-    transform: translate(-2px, 2px);
-  }
-
-  40% {
-    transform: translate(-2px, -2px);
-  }
-
-  60% {
-    transform: translate(2px, 2px);
-  }
-
-  80% {
-    transform: translate(2px, -2px);
-  }
-}
-
-@keyframes glitch-2 {
-
-  0%,
-  100% {
-    transform: translate(0);
-  }
-
-  20% {
-    transform: translate(2px, -2px);
-  }
-
-  40% {
-    transform: translate(2px, 2px);
-  }
-
-  60% {
-    transform: translate(-2px, -2px);
-  }
-
-  80% {
-    transform: translate(-2px, 2px);
-  }
-}
 
 @keyframes fade-in-up {
   from {
@@ -121,32 +47,6 @@ body {
   }
 }
 
-@keyframes border-pulse {
-
-  0%,
-  100% {
-    opacity: 0.3;
-    transform: scale(1);
-  }
-
-  50% {
-    opacity: 0.8;
-    transform: scale(1.05);
-  }
-}
-
-.animate-glow {
-  animation: glow 3s ease-in-out infinite;
-}
-
-.animate-glitch-1 {
-  animation: glitch-1 0.3s infinite;
-}
-
-.animate-glitch-2 {
-  animation: glitch-2 0.3s infinite 0.1s;
-}
-
 .animate-fade-in-up {
   animation: fade-in-up 1s ease-out forwards;
   opacity: 0;
@@ -154,10 +54,6 @@ body {
 
 .animate-float {
   animation: float 3s ease-in-out infinite;
-}
-
-.animate-border-pulse {
-  animation: border-pulse 2s ease-in-out infinite;
 }
 
 .animation-delay-2000 {

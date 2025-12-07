@@ -19,7 +19,7 @@ export default function Home() {
             {/* Left Content */}
             <div className="space-y-8 animate-fade-in-up">
               {/* Decorative line */}
-              <div className="w-16 h-1 bg-pink-500" style={{ boxShadow: '0 0 20px rgba(255, 0, 110, 0.6)' }}></div>
+              <div className="w-16 h-1 bg-pink-500"></div>
 
               <div>
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
@@ -28,7 +28,7 @@ export default function Home() {
                 </h1>
                 <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold">
                   <span className="text-gray-400">a </span>
-                  <span className="text-pink-500 animate-glow" style={{ textShadow: '0 0 30px rgba(255, 0, 110, 0.6)' }}>digital designer</span>
+                  <span className="text-pink-500">digital designer</span>
                 </h2>
               </div>
 
@@ -37,7 +37,7 @@ export default function Home() {
               </p>
 
               <div className="flex gap-4 flex-wrap animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-                <Link href="/contact" className="group relative px-8 py-4 bg-pink-500 hover:bg-pink-600 rounded-full transition-all font-medium overflow-hidden" style={{ boxShadow: '0 0 30px rgba(255, 0, 110, 0.4)' }}>
+                <Link href="/contact" className="group relative px-8 py-4 bg-pink-500 hover:bg-pink-600 rounded-full transition-all font-medium overflow-hidden">
                   <span className="relative z-10">contact me</span>
                   <div className="absolute inset-0 bg-pink-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </Link>
@@ -52,14 +52,14 @@ export default function Home() {
               <div className="relative w-full max-w-md lg:max-w-lg">
                 {/* Decorative circles */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-full aspect-square rounded-full border-4 border-pink-500/30" style={{ boxShadow: '0 0 60px rgba(255, 0, 110, 0.3)' }}></div>
+                  <div className="w-full aspect-square rounded-full border-4 border-pink-500/30"></div>
                 </div>
                 <div className="absolute inset-0 flex items-center justify-center animate-pulse">
                   <div className="w-[85%] aspect-square rounded-full bg-pink-500/10 blur-2xl"></div>
                 </div>
 
                 {/* Profile placeholder */}
-                <div className="relative z-10 w-full aspect-square rounded-full bg-gradient-to-br from-gray-800 to-gray-900 border-4 border-pink-500/20 overflow-hidden flex items-center justify-center" style={{ boxShadow: '0 0 40px rgba(255, 0, 110, 0.2)' }}>
+                <div className="relative z-10 w-full aspect-square rounded-full bg-gradient-to-br from-gray-800 to-gray-900 border-4 border-pink-500/20 overflow-hidden flex items-center justify-center">
                   <div className="w-32 h-32 bg-pink-500/20 rounded-full flex items-center justify-center">
                     <svg className="w-20 h-20 text-pink-500/40" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
@@ -68,8 +68,8 @@ export default function Home() {
                 </div>
 
                 {/* Floating decorative elements */}
-                <div className="absolute top-1/4 -left-4 w-3 h-3 bg-pink-500 rounded-full animate-float" style={{ boxShadow: '0 0 20px rgba(255, 0, 110, 0.8)' }}></div>
-                <div className="absolute bottom-1/4 -right-4 w-2 h-2 bg-pink-400 rounded-full animate-float animation-delay-2000" style={{ boxShadow: '0 0 15px rgba(255, 0, 110, 0.8)' }}></div>
+                <div className="absolute top-1/4 -left-4 w-3 h-3 bg-pink-500 rounded-full animate-float"></div>
+                <div className="absolute bottom-1/4 -right-4 w-2 h-2 bg-pink-400 rounded-full animate-float animation-delay-2000"></div>
               </div>
             </div>
           </div>

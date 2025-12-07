@@ -6,7 +6,7 @@ export default function Navigation() {
             <div className="max-w-6xl mx-auto px-6 py-4">
                 <div className="flex justify-between items-center">
                     <Link href="/">
-                        <h1 className="relative text-2xl font-bold text-pink-500 cursor-pointer hover:text-pink-400 transition-all group" style={{ textShadow: '0 0 20px rgba(255, 0, 110, 0.8)' }}>
+                        <h1 className="relative text-2xl font-bold text-pink-500 cursor-pointer hover:text-pink-400 transition-all group">
                             <span className="relative z-10">Portfolio</span>
                             <span className="absolute inset-0 bg-pink-500/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity rounded"></span>
                         </h1>

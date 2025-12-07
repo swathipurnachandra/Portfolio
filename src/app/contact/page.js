@@ -9,7 +9,7 @@ export default function Contact() {
                 <div className="max-w-4xl mx-auto">
                     {/* Header Section */}
                     <div className="mb-16">
-                        <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{ textShadow: '0 0 30px rgba(255, 0, 110, 0.8)' }}>
+                        <h1 className="text-5xl md:text-6xl font-bold mb-6">
                             Contact Me
                         </h1>
                         <p className="text-xl text-gray-300 mb-2">I would love to connect!</p>

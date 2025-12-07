@@ -97,7 +97,7 @@ export default function Skills() {
 
             <main className="pt-24 pb-16 px-6">
                 <div className="max-w-6xl mx-auto">
-                    <h1 className="text-5xl md:text-6xl font-bold mb-4 text-pink-500" style={{ textShadow: '0 0 30px rgba(255, 0, 110, 0.8)' }}>
+                    <h1 className="text-5xl md:text-6xl font-bold mb-4 text-pink-500">
                         Skills & Expertise
                     </h1>
                     <p className="text-xl text-gray-400 mb-12">
@@ -122,7 +122,7 @@ export default function Skills() {
                                                 <div className="w-full bg-gray-700 rounded-full h-2.5">
                                                     <div
                                                         className="bg-pink-500 h-2.5 rounded-full transition-all duration-1000 ease-out"
-                                                        style={{ width: `${skill.level}%`, boxShadow: '0 0 10px rgba(255, 0, 110, 0.5)' }}
+                                                        style={{ width: `${skill.level}%` }}
                                                     ></div>
                                                 </div>
                                             </div>
@@ -190,7 +190,7 @@ export default function Skills() {
                         </p>
                         <a
                             href="/contact"
-                            className="inline-block px-8 py-3 bg-pink-500 hover:bg-pink-600 rounded-lg transition-colors font-medium" style={{ boxShadow: '0 0 20px rgba(255, 0, 110, 0.5)' }}>
+                            className="inline-block px-8 py-3 bg-pink-500 hover:bg-pink-600 rounded-lg transition-colors font-medium">
                             Get In Touch
                         </a>
                     </div>

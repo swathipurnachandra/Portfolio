@@ -12,7 +12,7 @@ export default function About() {
 
             <main className="pt-24 pb-16 px-6">
                 <div className="max-w-4xl mx-auto">
-                    <h1 className="text-5xl md:text-6xl font-bold mb-8 text-pink-500" style={{ textShadow: '0 0 30px rgba(255, 0, 110, 0.8)' }}>
+                    <h1 className="text-5xl md:text-6xl font-bold mb-8 text-pink-500">
                         About Me
                     </h1>
 

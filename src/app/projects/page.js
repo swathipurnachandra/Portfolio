@@ -63,66 +63,62 @@ export default function Projects() {
 
             <main className="pt-24 pb-16 px-6">
                 <div className="max-w-6xl mx-auto">
-                    <h1 className="text-5xl md:text-6xl font-bold mb-4 text-pink-500" style={{ textShadow: '0 0 30px rgba(255, 0, 110, 0.8)' }}>
+                    <h1 className="text-5xl md:text-6xl font-bold mb-4 text-pink-500">
                         My Projects
                     </h1>
                     <p className="text-xl text-gray-400 mb-12">
                         Here are some of my recent projects showcasing my skills and expertise
                     </p>
 
-                    <div className="grid md:grid-cols-2 gap-8">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {projects.map((project, index) => (
                             <div
                                 key={index}
-                                className="bg-gray-900/50 backdrop-blur-sm rounded-xl p-6 border border-pink-500/30 hover:border-pink-500 transition-all hover:scale-[1.02]"
-                                style={{ boxShadow: '0 0 20px rgba(255, 0, 110, 0.1)' }}
+                                className="group relative bg-gradient-to-br from-white to-pink-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
                             >
-                                <h3 className="text-2xl font-bold mb-3 text-pink-500">{project.title}</h3>
-                                <p className="text-gray-400 mb-4 leading-relaxed">{project.description}</p>
+                                {/* Red accent border on bottom-left */}
+                                <div className="absolute bottom-0 left-0 w-1 h-32 bg-gradient-to-t from-pink-500 to-transparent rounded-bl-2xl"></div>
 
-                                {/* Technologies */}
-                                <div className="mb-4">
-                                    <h4 className="text-sm font-semibold text-gray-300 mb-2">Technologies:</h4>
-                                    <div className="flex flex-wrap gap-2">
-                                        {project.tech.map((tech, i) => (
-                                            <span key={i} className="px-3 py-1 bg-pink-500/20 border border-pink-500/30 rounded-full text-sm text-pink-300">
-                                                {tech}
-                                            </span>
-                                        ))}
+                                <div className="relative z-10">
+                                    <h3 className="text-xl font-bold mb-3 text-gray-900">{project.title}</h3>
+                                    <p className="text-gray-600 mb-4 leading-relaxed text-sm">{project.description}</p>
+
+                                    {/* Technologies */}
+                                    <div className="mb-4">
+                                        <h4 className="text-xs font-semibold text-gray-700 mb-2">Technologies:</h4>
+                                        <div className="flex flex-wrap gap-2">
+                                            {project.tech.map((tech, i) => (
+                                                <span key={i} className="px-2 py-1 bg-pink-100 border border-pink-200 rounded-md text-xs text-pink-700">
+                                                    {tech}
+                                                </span>
+                                            ))}
+                                        </div>
                                     </div>
-                                </div>
 
-                                {/* Features */}
-                                <div className="mb-4">
-                                    <h4 className="text-sm font-semibold text-gray-300 mb-2">Key Features:</h4>
-                                    <ul className="grid grid-cols-2 gap-2">
-                                        {project.features.map((feature, i) => (
-                                            <li key={i} className="text-sm text-gray-400 flex items-center">
-                                                <span className="text-pink-500 mr-2">✓</span>
-                                                {feature}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
+                                    {/* Features */}
+                                    <div className="mb-4">
+                                        <h4 className="text-xs font-semibold text-gray-700 mb-2">Key Features:</h4>
+                                        <ul className="space-y-1">
+                                            {project.features.map((feature, i) => (
+                                                <li key={i} className="text-xs text-gray-600 flex items-center">
+                                                    <span className="text-pink-500 mr-2">✓</span>
+                                                    {feature}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
 
-                                {/* Links */}
-                                <div className="flex gap-4 mt-6">
-                                    <a
-                                        href={project.github}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex-1 px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors text-center font-medium"
-                                    >
-                                        View Code
-                                    </a>
-                                    <a
-                                        href={project.demo}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex-1 px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg transition-colors text-center font-medium"
-                                    >
-                                        Live Demo
-                                    </a>
+                                    {/* Links */}
+                                    <div className="mt-6">
+                                        <a
+                                            href={project.github}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="block w-full px-4 py-2 bg-gray-800 hover:bg-gray-900 text-white rounded-lg transition-colors text-center font-medium text-sm"
+                                        >
+                                            View Code
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         ))}
@@ -138,7 +134,7 @@ export default function Projects() {
                             href="https://github.com/yourusername"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-block px-8 py-3 bg-pink-500 hover:bg-pink-600 rounded-lg transition-colors font-medium" style={{ boxShadow: '0 0 20px rgba(255, 0, 110, 0.5)' }}>
+                            className="inline-block px-8 py-3 bg-pink-500 hover:bg-pink-600 rounded-lg transition-colors font-medium">
                             Visit My GitHub
                         </a>
                     </div>
