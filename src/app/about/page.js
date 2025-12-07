@@ -18,56 +18,59 @@ export default function About() {
 
                     <div className="space-y-8">
                         {/* Introduction */}
-                        <div className="bg-gray-900/50 backdrop-blur-sm rounded-xl p-8 border border-pink-500/30">
-                            <h2 className="text-3xl font-bold mb-4 text-pink-500">Hello! 👋</h2>
-                            <p className="text-gray-300 text-lg leading-relaxed mb-4">
+                        <div className="relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-8 shadow-lg overflow-hidden">
+                            <div className="absolute bottom-0 left-0 w-1 h-32 bg-linear-to-t from-pink-500 to-transparent rounded-bl-2xl"></div>
+                            <h2 className="text-3xl font-bold mb-4 text-gray-900">Hello! 👋</h2>
+                            <p className="text-gray-700 text-lg leading-relaxed mb-4">
                                 I&apos;m a passionate developer with expertise in creating modern web applications.
                                 I love turning ideas into reality through clean code and elegant design.
                             </p>
-                            <p className="text-gray-300 text-lg leading-relaxed">
+                            <p className="text-gray-700 text-lg leading-relaxed">
                                 With experience in both frontend and backend development, I specialize in building
                                 responsive, user-friendly applications that solve real-world problems.
                             </p>
                         </div>
 
                         {/* Background */}
-                        <div className="bg-gray-900/50 backdrop-blur-sm rounded-xl p-8 border border-pink-500/30">
-                            <h2 className="text-3xl font-bold mb-4 text-pink-400">My Background</h2>
-                            <p className="text-gray-300 text-lg leading-relaxed mb-4">
+                        <div className="relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-8 shadow-lg overflow-hidden">
+                            <div className="absolute bottom-0 left-0 w-1 h-32 bg-linear-to-t from-pink-500 to-transparent rounded-bl-2xl"></div>
+                            <h2 className="text-3xl font-bold mb-4 text-gray-900">My Background</h2>
+                            <p className="text-gray-700 text-lg leading-relaxed mb-4">
                                 My journey in web development started [X years ago], and since then, I&apos;ve been
                                 continuously learning and growing in this ever-evolving field.
                             </p>
-                            <p className="text-gray-300 text-lg leading-relaxed">
+                            <p className="text-gray-700 text-lg leading-relaxed">
                                 I have worked on various projects ranging from small business websites to large-scale
                                 web applications, always focusing on delivering quality and user satisfaction.
                             </p>
                         </div>
 
                         {/* What I Do */}
-                        <div className="bg-gray-900/50 backdrop-blur-sm rounded-xl p-8 border border-pink-500/30">
-                            <h2 className="text-3xl font-bold mb-6 text-pink-500">What I Do</h2>
+                        <div className="relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-8 shadow-lg overflow-hidden">
+                            <div className="absolute bottom-0 left-0 w-1 h-32 bg-linear-to-t from-pink-500 to-transparent rounded-bl-2xl"></div>
+                            <h2 className="text-3xl font-bold mb-6 text-gray-900">What I Do</h2>
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
-                                    <h3 className="text-xl font-semibold text-pink-400">Frontend Development</h3>
-                                    <p className="text-gray-300">
+                                    <h3 className="text-xl font-semibold text-pink-600">Frontend Development</h3>
+                                    <p className="text-gray-700">
                                         Creating responsive, intuitive user interfaces with modern frameworks and libraries.
                                     </p>
                                 </div>
                                 <div className="space-y-2">
-                                    <h3 className="text-xl font-semibold text-pink-400">Backend Development</h3>
-                                    <p className="text-gray-300">
+                                    <h3 className="text-xl font-semibold text-pink-600">Backend Development</h3>
+                                    <p className="text-gray-700">
                                         Building robust server-side applications, APIs, and database architectures.
                                     </p>
                                 </div>
                                 <div className="space-y-2">
-                                    <h3 className="text-xl font-semibold text-pink-400">UI/UX Design</h3>
-                                    <p className="text-gray-300">
+                                    <h3 className="text-xl font-semibold text-pink-600">UI/UX Design</h3>
+                                    <p className="text-gray-700">
                                         Designing beautiful, user-centered interfaces that enhance user experience.
                                     </p>
                                 </div>
                                 <div className="space-y-2">
-                                    <h3 className="text-xl font-semibold text-pink-400">Problem Solving</h3>
-                                    <p className="text-gray-300">
+                                    <h3 className="text-xl font-semibold text-pink-600">Problem Solving</h3>
+                                    <p className="text-gray-700">
                                         Analyzing complex problems and implementing efficient, scalable solutions.
                                     </p>
                                 </div>
@@ -75,9 +78,10 @@ export default function About() {
                         </div>
 
                         {/* Philosophy */}
-                        <div className="bg-gray-900/50 backdrop-blur-sm rounded-xl p-8 border border-pink-500/30">
-                            <h2 className="text-3xl font-bold mb-4 text-pink-500">My Philosophy</h2>
-                            <ul className="space-y-3 text-gray-300 text-lg">
+                        <div className="relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-8 shadow-lg overflow-hidden">
+                            <div className="absolute bottom-0 left-0 w-1 h-32 bg-linear-to-t from-pink-500 to-transparent rounded-bl-2xl"></div>
+                            <h2 className="text-3xl font-bold mb-4 text-gray-900">My Philosophy</h2>
+                            <ul className="space-y-3 text-gray-700 text-lg">
                                 <li className="flex items-start">
                                     <span className="text-pink-500 mr-3">•</span>
                                     <span>Write clean, maintainable code that others can understand</span>

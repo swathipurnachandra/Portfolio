@@ -74,10 +74,10 @@ export default function Projects() {
                         {projects.map((project, index) => (
                             <div
                                 key={index}
-                                className="group relative bg-gradient-to-br from-white to-pink-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
+                                className="group relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
                             >
                                 {/* Red accent border on bottom-left */}
-                                <div className="absolute bottom-0 left-0 w-1 h-32 bg-gradient-to-t from-pink-500 to-transparent rounded-bl-2xl"></div>
+                                <div className="absolute bottom-0 left-0 w-1 h-32 bg-linear-to-t from-pink-500 to-transparent rounded-bl-2xl"></div>
 
                                 <div className="relative z-10">
                                     <h3 className="text-xl font-bold mb-3 text-gray-900">{project.title}</h3>
@@ -125,16 +125,17 @@ export default function Projects() {
                     </div>
 
                     {/* Call to Action */}
-                    <div className="mt-16 text-center bg-gray-900/50 backdrop-blur-sm rounded-xl p-8 border border-pink-500/30">
-                        <h2 className="text-3xl font-bold mb-4 text-pink-500">Want to see more?</h2>
-                        <p className="text-gray-400 mb-6">
+                    <div className="mt-16 text-center relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-8 shadow-lg overflow-hidden">
+                        <div className="absolute bottom-0 left-0 w-1 h-32 bg-linear-to-t from-pink-500 to-transparent rounded-bl-2xl"></div>
+                        <h2 className="text-3xl font-bold mb-4 text-gray-900">Want to see more?</h2>
+                        <p className="text-gray-700 mb-6">
                             Check out my GitHub profile for more projects and contributions
                         </p>
                         <a
                             href="https://github.com/yourusername"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-block px-8 py-3 bg-pink-500 hover:bg-pink-600 rounded-lg transition-colors font-medium">
+                            className="inline-block px-8 py-3 bg-pink-500 hover:bg-pink-600 text-white rounded-lg transition-colors font-medium">
                             Visit My GitHub
                         </a>
                     </div>

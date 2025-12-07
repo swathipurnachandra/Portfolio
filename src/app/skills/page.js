@@ -108,18 +108,19 @@ export default function Skills() {
                         {skillCategories.map((category, idx) => {
                             const colors = getColorClasses(category.color);
                             return (
-                                <div key={idx} className="bg-gray-900/50 backdrop-blur-sm rounded-xl p-8 border border-pink-500/30">
-                                    <h2 className="text-3xl font-bold mb-6 text-pink-500">
+                                <div key={idx} className="relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-8 shadow-lg overflow-hidden">
+                                    <div className="absolute bottom-0 left-0 w-1 h-32 bg-linear-to-t from-pink-500 to-transparent rounded-bl-2xl"></div>
+                                    <h2 className="text-3xl font-bold mb-6 text-gray-900">
                                         {category.title}
                                     </h2>
                                     <div className="grid md:grid-cols-2 gap-6">
                                         {category.skills.map((skill, skillIdx) => (
                                             <div key={skillIdx}>
                                                 <div className="flex justify-between mb-2">
-                                                    <span className="text-gray-300 font-medium">{skill.name}</span>
-                                                    <span className="text-gray-400">{skill.level}%</span>
+                                                    <span className="text-gray-900 font-medium">{skill.name}</span>
+                                                    <span className="text-gray-600">{skill.level}%</span>
                                                 </div>
-                                                <div className="w-full bg-gray-700 rounded-full h-2.5">
+                                                <div className="w-full bg-gray-200 rounded-full h-2.5">
                                                     <div
                                                         className="bg-pink-500 h-2.5 rounded-full transition-all duration-1000 ease-out"
                                                         style={{ width: `${skill.level}%` }}
@@ -134,25 +135,27 @@ export default function Skills() {
                     </div>
 
                     {/* Learning Section */}
-                    <div className="mt-12 bg-gray-900/50 backdrop-blur-sm rounded-xl p-8 border border-pink-500/30">
-                        <h2 className="text-3xl font-bold mb-6 text-pink-500">Currently Learning</h2>
+                    <div className="mt-12 relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-8 shadow-lg overflow-hidden">
+                        <div className="absolute bottom-0 left-0 w-1 h-32 bg-linear-to-t from-pink-500 to-transparent rounded-bl-2xl"></div>
+                        <h2 className="text-3xl font-bold mb-6 text-gray-900">Currently Learning</h2>
                         <div className="grid md:grid-cols-3 gap-6">
                             {[
                                 { name: "Rust", description: "Systems programming language" },
                                 { name: "AWS", description: "Cloud computing services" },
                                 { name: "Three.js", description: "3D graphics for the web" }
                             ].map((item, idx) => (
-                                <div key={idx} className="bg-black/50 rounded-lg p-4 border border-pink-500/30">
-                                    <h3 className="text-xl font-semibold text-pink-400 mb-2">{item.name}</h3>
-                                    <p className="text-gray-400 text-sm">{item.description}</p>
+                                <div key={idx} className="bg-pink-100 rounded-lg p-4 border border-pink-200">
+                                    <h3 className="text-xl font-semibold text-pink-600 mb-2">{item.name}</h3>
+                                    <p className="text-gray-700 text-sm">{item.description}</p>
                                 </div>
                             ))}
                         </div>
                     </div>
 
                     {/* Certifications */}
-                    <div className="mt-12 bg-gray-900/50 backdrop-blur-sm rounded-xl p-8 border border-pink-500/30">
-                        <h2 className="text-3xl font-bold mb-6 text-pink-500">Certifications & Achievements</h2>
+                    <div className="mt-12 relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-8 shadow-lg overflow-hidden">
+                        <div className="absolute bottom-0 left-0 w-1 h-32 bg-linear-to-t from-pink-500 to-transparent rounded-bl-2xl"></div>
+                        <h2 className="text-3xl font-bold mb-6 text-gray-900">Certifications & Achievements</h2>
                         <div className="space-y-4">
                             {[
                                 {
@@ -171,10 +174,10 @@ export default function Skills() {
                                     year: "2023"
                                 }
                             ].map((cert, idx) => (
-                                <div key={idx} className="flex items-start justify-between bg-black/50 rounded-lg p-4 border border-pink-500/30">
+                                <div key={idx} className="flex items-start justify-between bg-pink-100 rounded-lg p-4 border border-pink-200">
                                     <div>
-                                        <h3 className="text-lg font-semibold text-gray-200">{cert.title}</h3>
-                                        <p className="text-gray-400 text-sm">{cert.issuer}</p>
+                                        <h3 className="text-lg font-semibold text-gray-900">{cert.title}</h3>
+                                        <p className="text-gray-700 text-sm">{cert.issuer}</p>
                                     </div>
                                     <span className="text-pink-400 font-medium">{cert.year}</span>
                                 </div>
@@ -183,14 +186,15 @@ export default function Skills() {
                     </div>
 
                     {/* Call to Action */}
-                    <div className="mt-12 text-center bg-gray-900/50 rounded-xl p-8 border border-pink-500/30">
-                        <h2 className="text-3xl font-bold mb-4 text-pink-500">Interested in working together?</h2>
-                        <p className="text-gray-400 mb-6">
+                    <div className="mt-12 text-center relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-8 shadow-lg overflow-hidden">
+                        <div className="absolute bottom-0 left-0 w-1 h-32 bg-linear-to-t from-pink-500 to-transparent rounded-bl-2xl"></div>
+                        <h2 className="text-3xl font-bold mb-4 text-gray-900">Interested in working together?</h2>
+                        <p className="text-gray-700 mb-6">
                             Let&apos;s discuss how I can help bring your project to life
                         </p>
                         <a
                             href="/contact"
-                            className="inline-block px-8 py-3 bg-pink-500 hover:bg-pink-600 rounded-lg transition-colors font-medium">
+                            className="inline-block px-8 py-3 bg-pink-500 hover:bg-pink-600 text-white rounded-lg transition-colors font-medium">
                             Get In Touch
                         </a>
                     </div>
