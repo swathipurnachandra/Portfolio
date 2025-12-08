@@ -44,7 +44,7 @@ export default function Home() {
 
             {/* Right Content - Profile Image */}
             <div className="relative flex justify-center lg:justify-end">
-              <div className="relative w-full max-w-md lg:max-w-lg">
+              <div className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md">
                 {/* Decorative circles */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="w-full aspect-square rounded-full border-4 border-pink-500/30"></div>
@@ -56,10 +56,10 @@ export default function Home() {
                 {/* Profile Image */}
                 <div className="relative z-10 w-full aspect-square rounded-full border-4 border-pink-500/20 overflow-hidden">
                   <Image
-                    src="/swath.jpg"
+                    src="/swathip.jpeg"
                     alt="Swathi P"
                     fill
-                    className="object-cover"
+                    className="object-cover object-top"
                     priority
                   />
                 </div>
