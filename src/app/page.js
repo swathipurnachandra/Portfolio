@@ -13,36 +13,36 @@ export default function Home() {
       <Navigation />
 
       {/* Hero Section - Split Layout */}
-      <section className="min-h-screen flex items-center relative z-10">
-        <div className="container mx-auto px-6 lg:px-12">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section className="min-h-screen flex items-center relative z-10 py-20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
-            <div className="space-y-8 animate-fade-in-up">
+            <div className="space-y-6 sm:space-y-8 animate-fade-in-up">
               {/* Decorative line */}
-              <div className="w-16 h-1 bg-pink-500"></div>
+              <div className="w-12 sm:w-16 h-1 bg-pink-500"></div>
 
               <div>
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
-                  <span className="text-gray-200">im </span>
-                  <span className="text-white">john moore,</span>
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-3 sm:mb-4 leading-tight">
+                  <span className="text-gray-200">I am</span>
+                  <span className="text-white"> Swathi P,</span>
                 </h1>
-                <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold">
-                  <span className="text-gray-400">a </span>
-                  <span className="text-pink-500">digital designer</span>
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
+                  <span className="text-gray-400">an</span>
+                  <span className="text-pink-500"> aspiring 3D XR Developer </span>
                 </h2>
               </div>
 
-              <p className="text-gray-400 text-lg max-w-lg leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-                Lorem ipsum dolor sit amet, consectetur adipis elitor. Euismod elementum nunc faucibus enim. Amet velit lectus elementum leo placerat odio. Morbi.
+              <p className="text-gray-400 text-base sm:text-lg max-w-lg leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+                I like to craft 3D models, provide solution to real world problems, and create immersive web experiences.
               </p>
 
-              <div className="flex gap-4 flex-wrap animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+              <div className="flex gap-3 sm:gap-4 flex-wrap animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
                 <Link href="/contact" className="group relative px-8 py-4 bg-pink-500 hover:bg-pink-600 rounded-full transition-all font-medium overflow-hidden">
-                  <span className="relative z-10">contact me</span>
+                  <span className="relative z-10">Contact Me</span>
                   <div className="absolute inset-0 bg-pink-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </Link>
                 <Link href="/about" className="group relative px-8 py-4 bg-transparent hover:bg-pink-500/10 rounded-full transition-all font-medium border-2 border-transparent hover:border-pink-500/30">
-                  <span className="text-pink-500">browse portfolio</span>
+                  <span className="text-pink-500">Browse Portfolio</span>
                 </Link>
               </div>
             </div>
@@ -79,7 +79,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-8 px-6 border-t border-pink-500/30">
         <div className="max-w-6xl mx-auto text-center text-gray-500">
-          <p>© 2025 Your Name. Built with Next.js and Tailwind CSS.</p>
+          <p>© 2025 Swathi P. Built with Next.js and Tailwind CSS.</p>
         </div>
       </footer>
     </div>

@@ -2,13 +2,13 @@ import Navigation from '@/components/Navigation';
 
 export const metadata = {
     title: 'Projects | My Portfolio',
-    description: 'Explore my web development projects and technical work',
+    description: 'Dive deep into my technology interests.',
 };
 
 export default function Projects() {
     const projects = [
         {
-            title: "E-Commerce Platform",
+            title: "SAKSHaM - For the community, By the commnunity",
             description: "A full-featured e-commerce platform with payment integration, user authentication, shopping cart, and admin dashboard. Built with modern technologies for scalability and performance.",
             tech: ["Next.js", "TypeScript", "Stripe", "MongoDB", "Tailwind CSS"],
             features: ["Payment Integration", "Admin Dashboard", "Real-time Inventory", "User Reviews"],
@@ -16,7 +16,7 @@ export default function Projects() {
             demo: "https://project1.demo.com"
         },
         {
-            title: "Real-Time Chat Application",
+            title: "UNSAID",
             description: "A modern chat application with real-time messaging, group chats, file sharing, and emoji support. Features WebSocket connections for instant communication.",
             tech: ["React", "Socket.io", "Node.js", "Express", "PostgreSQL"],
             features: ["Real-time Messaging", "Group Chats", "File Sharing", "Typing Indicators"],
@@ -24,7 +24,7 @@ export default function Projects() {
             demo: "https://project2.demo.com"
         },
         {
-            title: "Task Management System",
+            title: "Hostel Drop",
             description: "A collaborative task management tool with project boards, team collaboration features, and progress tracking. Perfect for agile teams and project management.",
             tech: ["React", "Node.js", "MongoDB", "Redux", "Material-UI"],
             features: ["Drag & Drop", "Team Collaboration", "Progress Tracking", "Notifications"],
@@ -61,13 +61,13 @@ export default function Projects() {
         <div className="min-h-screen bg-black text-white">
             <Navigation />
 
-            <main className="pt-24 pb-16 px-6">
+            <main className="pt-20 sm:pt-24 pb-12 sm:pb-16 px-4 sm:px-6">
                 <div className="max-w-6xl mx-auto">
-                    <h1 className="text-5xl md:text-6xl font-bold mb-4 text-pink-500">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4 text-pink-500">
                         My Projects
                     </h1>
                     <p className="text-xl text-gray-400 mb-12">
-                        Here are some of my recent projects showcasing my skills and expertise
+                        These are some projects that I worked on recently.
                     </p>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -129,10 +129,10 @@ export default function Projects() {
                         <div className="absolute bottom-0 left-0 w-1 h-32 bg-linear-to-t from-pink-500 to-transparent rounded-bl-2xl"></div>
                         <h2 className="text-3xl font-bold mb-4 text-gray-900">Want to see more?</h2>
                         <p className="text-gray-700 mb-6">
-                            Check out my GitHub profile for more projects and contributions
+                            Check out my GitHub profile to know mre about my projects and contributions.
                         </p>
                         <a
-                            href="https://github.com/yourusername"
+                            href="https://github.com/swathipurnachandra"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-block px-8 py-3 bg-pink-500 hover:bg-pink-600 text-white rounded-lg transition-colors font-medium">
@@ -145,7 +145,7 @@ export default function Projects() {
             {/* Footer */}
             <footer className="py-8 px-6 border-t border-pink-500/30">
                 <div className="max-w-6xl mx-auto text-center text-gray-500">
-                    <p>© 2025 Your Name. Built with Next.js and Tailwind CSS.</p>
+                    <p>© 2025 Swathi P. Built with Next.js and Tailwind CSS.</p>
                 </div>
             </footer>
         </div>

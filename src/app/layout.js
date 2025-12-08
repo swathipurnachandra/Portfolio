@@ -8,8 +8,8 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-  title: "My Portfolio | Full Stack Developer",
-  description: "Portfolio showcasing my web development projects and skills",
+  title: "My Portfolio | Swathi P",
+  description: "This is my portfolio website to showcase my interests and projects.",
 };
 
 export default function RootLayout({ children }) {
