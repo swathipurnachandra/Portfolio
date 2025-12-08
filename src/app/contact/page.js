@@ -103,7 +103,7 @@ export default function Contact() {
                             <div>
                                 <div>
                                     <a
-                                        href="/resume.pdf"
+                                        href="/Swathi_P_Resume.pdf"
                                         download
                                         className="text-pink-500 hover:underline font-medium"
                                     >
