@@ -22,13 +22,10 @@ export default function About() {
                             <div className="absolute bottom-0 left-0 w-1 h-32 bg-linear-to-t from-pink-500 to-transparent rounded-bl-2xl"></div>
                             <h2 className="text-2xl font-bold mb-4 text-gray-900">Hey there!</h2>
                             <p className="text-gray-700 text-base leading-relaxed mb-4 text-justify">
-                                I am Swathi P, a sophomore student pursuing CSE(Cyber Security) passionate about building intuitive web applications and exploring
-                                immersive technologies like VR, AR, and 3D Models.
-
+                                I am Swathi P, a sophomore student pursuing CSE(Cyber Security) passionate about building intuitive web applications and exploring immersive technologies like VR, AR, and 3D Models.
                             </p>
                             <p className="text-gray-700 text-base leading-relaxed text-justify">
-                                I am also actively learning Three.js, Blender, and strengthening my skills in Data Structures and Algorithms.
-                                I am constantly seeking opportunities to grow and contribute to innovative projects.
+                                I am also actively learning Three.js, Blender, and strengthening my skills in Data Structures and Algorithms. I am constantly seeking opportunities to grow and contribute to innovative projects.
                             </p>
                         </div>
 

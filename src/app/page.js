@@ -31,12 +31,12 @@ export default function Home() {
                 I build fast, modern, and immersive digital experiences using scalable frameworks. I love contributing to meaningful projects that provide solutions to real world problems. Let us build something meaningful together!
               </p>
 
-              <div className="flex gap-3 sm:gap-4 flex-wrap">
-                <Link href="/projects" className="group relative px-8 py-4 bg-pink-500 hover:bg-pink-600 rounded-full transition-all font-medium overflow-hidden inline-block text-center whitespace-nowrap">
+              <div className="flex gap-4 sm:gap-6 flex-wrap">
+                <Link href="/projects" className="group relative px-6 sm:px-8 py-3 sm:py-4 bg-pink-500 hover:bg-pink-600 rounded-full transition-all font-medium overflow-hidden inline-block text-center whitespace-nowrap min-w-[140px]">
                   <span className="relative z-10">View Projects</span>
                   <div className="absolute inset-0 bg-pink-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </Link>
-                <Link href="/about" className="group relative px-8 py-4 bg-transparent hover:bg-pink-500/10 rounded-full transition-all font-medium border-2 border-transparent hover:border-pink-500/30 inline-block text-center whitespace-nowrap">
+                <Link href="/about" className="group relative px-6 sm:px-8 py-3 sm:py-4 bg-transparent hover:bg-pink-500/10 rounded-full transition-all font-medium border-2 border-pink-500/30 hover:border-pink-500/50 inline-block text-center whitespace-nowrap min-w-[140px]">
                   <span className="text-pink-500">Browse Portfolio</span>
                 </Link>
               </div>
