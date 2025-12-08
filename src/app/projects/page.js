@@ -8,52 +8,26 @@ export const metadata = {
 export default function Projects() {
     const projects = [
         {
-            title: "SAKSHaM - For the community, By the commnunity",
-            description: "A full-featured e-commerce platform with payment integration, user authentication, shopping cart, and admin dashboard. Built with modern technologies for scalability and performance.",
-            tech: ["Next.js", "TypeScript", "Stripe", "MongoDB", "Tailwind CSS"],
-            features: ["Payment Integration", "Admin Dashboard", "Real-time Inventory", "User Reviews"],
-            github: "https://github.com/yourusername/project1",
-            demo: "https://project1.demo.com"
+            title: "AI Network Support Agent",
+            description: "This agent is designed to empower users by providing immediate, reliable, and AI-powered assistance for common PC and network issues. This system minimizes reliance on technical personnel by enabling users to diagnose and resolve problems independently through conversational guidance.",
+            tech: ["JavaScript", "Python + Streamlit", "Groq API", "FastAPI"],
+            features: ["Query Handling via AI", "Intent Recognition", "Context-Aware Follow-Up"],
+            github: "https://github.com/swathipurnachandra/emailbot",
+
         },
         {
-            title: "UNSAID",
-            description: "A modern chat application with real-time messaging, group chats, file sharing, and emoji support. Features WebSocket connections for instant communication.",
-            tech: ["React", "Socket.io", "Node.js", "Express", "PostgreSQL"],
-            features: ["Real-time Messaging", "Group Chats", "File Sharing", "Typing Indicators"],
-            github: "https://github.com/yourusername/project2",
-            demo: "https://project2.demo.com"
+            title: "3D Blackhole Simulation",
+            description: "Designed a 3D black hole simulation in Blender, showcasing gravitational lensing and accretion disk dyanmics. Implemented realistic textures and lighting to enhance visual fidelity, creating an immersive experience that illustrates complex astrophysical phenomena.",
+            tech: ["Blender",],
+            features: ["Interactive 3D Model", "Fast Rendering", "Smooth Animations"],
+            github: ""
         },
         {
-            title: "Hostel Drop",
-            description: "A collaborative task management tool with project boards, team collaboration features, and progress tracking. Perfect for agile teams and project management.",
-            tech: ["React", "Node.js", "MongoDB", "Redux", "Material-UI"],
-            features: ["Drag & Drop", "Team Collaboration", "Progress Tracking", "Notifications"],
-            github: "https://github.com/yourusername/project3",
-            demo: "https://project3.demo.com"
-        },
-        {
-            title: "Portfolio Website Builder",
-            description: "A drag-and-drop website builder that allows users to create beautiful portfolio websites without coding. Includes templates, customization options, and hosting.",
-            tech: ["Next.js", "React", "TailwindCSS", "Supabase", "Vercel"],
-            features: ["Drag & Drop Builder", "Multiple Templates", "Custom Domains", "Analytics"],
-            github: "https://github.com/yourusername/project4",
-            demo: "https://project4.demo.com"
-        },
-        {
-            title: "Weather Dashboard",
-            description: "A comprehensive weather application with current conditions, forecasts, interactive maps, and location-based weather alerts. Beautiful UI with data visualization.",
-            tech: ["React", "OpenWeather API", "Chart.js", "Styled Components"],
-            features: ["Real-time Weather", "7-Day Forecast", "Interactive Maps", "Weather Alerts"],
-            github: "https://github.com/yourusername/project5",
-            demo: "https://project5.demo.com"
-        },
-        {
-            title: "Social Media Dashboard",
-            description: "An analytics dashboard for social media management with metrics tracking, post scheduling, and engagement analytics across multiple platforms.",
-            tech: ["Vue.js", "Node.js", "MongoDB", "D3.js", "Express"],
-            features: ["Multi-platform Support", "Analytics", "Post Scheduling", "Engagement Metrics"],
-            github: "https://github.com/yourusername/project6",
-            demo: "https://project6.demo.com"
+            title: "WebXR Car Simulation",
+            description: "A simple 3D car simulation using A-Frame, JavaScript, and HTML. The project demonstrates basic WebXR capabilities, allowing users to interact with a 3D car model in a virtual environment.",
+            tech: ["A-Frame", "JavaScript", "HTML"],
+            features: ["Interactive 3D Model", "WASD Control", "Responsive UI"],
+            github: "https://github.com/swathipurnachandra/car-animation"
         }
     ];
 
@@ -66,7 +40,7 @@ export default function Projects() {
                     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4 text-pink-500">
                         My Projects
                     </h1>
-                    <p className="text-xl text-gray-400 mb-12">
+                    <p className="text-base text-gray-400 mb-12">
                         These are some projects that I worked on recently.
                     </p>
 
@@ -74,14 +48,14 @@ export default function Projects() {
                         {projects.map((project, index) => (
                             <div
                                 key={index}
-                                className="group relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden hover:scale-[1.02]"
+                                className="group relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden hover:scale-[1.02] flex flex-col"
                             >
                                 {/* Red accent border on bottom-left */}
                                 <div className="absolute bottom-0 left-0 w-1 h-32 bg-linear-to-t from-pink-500 to-transparent rounded-bl-2xl"></div>
 
-                                <div className="relative z-10">
-                                    <h3 className="text-xl font-bold mb-3 text-gray-900">{project.title}</h3>
-                                    <p className="text-gray-600 mb-4 leading-relaxed text-sm">{project.description}</p>
+                                <div className="relative z-10 flex flex-col flex-1">
+                                    <h3 className="text-lg font-bold mb-3 text-gray-900">{project.title}</h3>
+                                    <p className="text-gray-600 mb-4 leading-relaxed text-sm text-justify">{project.description}</p>
 
                                     {/* Technologies */}
                                     <div className="mb-4">
@@ -109,7 +83,7 @@ export default function Projects() {
                                     </div>
 
                                     {/* Links */}
-                                    <div className="mt-6">
+                                    <div className="mt-auto pt-6">
                                         <a
                                             href={project.github}
                                             target="_blank"
@@ -127,9 +101,9 @@ export default function Projects() {
                     {/* Call to Action */}
                     <div className="mt-16 text-center relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden hover:scale-[1.01]">
                         <div className="absolute bottom-0 left-0 w-1 h-32 bg-linear-to-t from-pink-500 to-transparent rounded-bl-2xl"></div>
-                        <h2 className="text-3xl font-bold mb-4 text-gray-900">Want to see more?</h2>
-                        <p className="text-gray-700 mb-6">
-                            Check out my GitHub profile to know mre about my projects and contributions.
+                        <h2 className="text-2xl font-bold mb-4 text-gray-900">Want to see more?</h2>
+                        <p className="text-gray-700 text-base mb-6">
+                            Check out my GitHub profile to know more about my projects and contributions.
                         </p>
                         <a
                             href="https://github.com/swathipurnachandra"
@@ -145,7 +119,7 @@ export default function Projects() {
             {/* Footer */}
             <footer className="py-8 px-6 border-t border-pink-500/30">
                 <div className="max-w-6xl mx-auto text-center text-gray-500">
-                    <p>© 2025 Swathi P. Built with Next.js and Tailwind CSS.</p>
+                    <p>© 2025 Swathi P. All rights reserved</p>
                 </div>
             </footer>
         </div>

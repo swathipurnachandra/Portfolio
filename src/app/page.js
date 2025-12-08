@@ -22,21 +22,21 @@ export default function Home() {
                   <span className="text-white"> Swathi P,</span>
                 </h1>
                 <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
-                  <span className="text-gray-400">an</span>
-                  <span className="text-pink-500"> aspiring 3D XR Developer </span>
+                  <span className="text-gray-400">a</span>
+                  <span className="text-pink-500"> Developer & XR Enthusiast</span>
                 </h2>
               </div>
 
-              <p className="text-gray-400 text-base sm:text-lg max-w-lg leading-relaxed">
-                I like to craft 3D models, provide solution to real world problems, and create immersive web experiences.
+              <p className="text-gray-400 text-base sm:text-lg max-w-lg leading-relaxed text-justify">
+                I build fast, modern, and immersive digital experiences using scalable frameworks. I love contributing to meaningful projects that provide solutions to real world problems. Let us build something meaningful together!
               </p>
 
               <div className="flex gap-3 sm:gap-4 flex-wrap">
-                <Link href="/projects" className="group relative px-8 py-4 bg-pink-500 hover:bg-pink-600 rounded-full transition-all font-medium overflow-hidden">
+                <Link href="/projects" className="group relative px-8 py-4 bg-pink-500 hover:bg-pink-600 rounded-full transition-all font-medium overflow-hidden inline-block text-center whitespace-nowrap">
                   <span className="relative z-10">View Projects</span>
                   <div className="absolute inset-0 bg-pink-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </Link>
-                <Link href="/about" className="group relative px-8 py-4 bg-transparent hover:bg-pink-500/10 rounded-full transition-all font-medium border-2 border-transparent hover:border-pink-500/30">
+                <Link href="/about" className="group relative px-8 py-4 bg-transparent hover:bg-pink-500/10 rounded-full transition-all font-medium border-2 border-transparent hover:border-pink-500/30 inline-block text-center whitespace-nowrap">
                   <span className="text-pink-500">Browse Portfolio</span>
                 </Link>
               </div>
@@ -76,7 +76,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-8 px-6 border-t border-pink-500/30">
         <div className="max-w-6xl mx-auto text-center text-gray-500">
-          <p>© 2025 Swathi P. Built with Next.js and Tailwind CSS.</p>
+          <p>© 2025 Swathi P. All rights reserved.</p>
         </div>
       </footer>
     </div>
