@@ -27,7 +27,7 @@ export default function Contact() {
                                 <div className="flex items-center gap-3">
                                     <a
                                         href="mailto:swathipurnachandra28@gmail.com"
-                                        className="text-pink-500 hover:text-pink-600 transition-colors flex-shrink-0"
+                                        className="text-pink-500 hover:text-pink-600 transition-colors shrink-0"
                                         aria-label="Email"
                                     >
                                         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -50,7 +50,7 @@ export default function Contact() {
                                         href="https://linkedin.com/in/swathi-p-404241329"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="text-pink-500 hover:text-pink-600 transition-colors flex-shrink-0"
+                                        className="text-pink-500 hover:text-pink-600 transition-colors shrink-0"
                                         aria-label="LinkedIn"
                                     >
                                         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -75,7 +75,7 @@ export default function Contact() {
                                         href="https://github.com/swathipurnachandra"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="text-pink-500 hover:text-pink-600 transition-colors flex-shrink-0"
+                                        className="text-pink-500 hover:text-pink-600 transition-colors shrink-0"
                                         aria-label="GitHub"
                                     >
                                         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -96,7 +96,7 @@ export default function Contact() {
                             {/* Location */}
                             <div>
                                 <div className="flex items-center gap-3">
-                                    <svg className="w-6 h-6 text-pink-500 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <svg className="w-6 h-6 text-pink-500 shrink-0" fill="currentColor" viewBox="0 0 24 24">
                                         <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                                     </svg>
                                     <span className="text-gray-900">Vadapalani, Chennai, India</span>
