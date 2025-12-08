@@ -102,17 +102,6 @@ export default function Contact() {
                                     <span className="text-gray-900">Vadapalani, Chennai, India</span>
                                 </div>
                             </div>
-
-                            {/* Resume Download */}
-                            <div className="mt-8 flex justify-center">
-                                <a
-                                    href="/Swathi_P_Resume.pdf"
-                                    download
-                                    className="inline-block px-8 py-3 bg-pink-500 hover:bg-pink-600 text-white rounded-lg transition-colors font-medium text-center"
-                                >
-                                    Download Resume
-                                </a>
-                            </div>
                         </div>
                     </div>
                 </div>

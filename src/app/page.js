@@ -36,9 +36,9 @@ export default function Home() {
                   <span className="relative z-10">View Projects</span>
                   <div className="absolute inset-0 bg-pink-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </Link>
-                <Link href="/about" className="group relative px-6 sm:px-8 py-3 sm:py-4 bg-transparent hover:bg-pink-500/10 rounded-full transition-all font-medium border-2 border-pink-500/30 hover:border-pink-500/50 inline-block text-center whitespace-nowrap min-w-[140px]">
-                  <span className="text-pink-500">Browse Portfolio</span>
-                </Link>
+                <a href="/Swathi_P_Resume.pdf" download className="group relative px-6 sm:px-8 py-3 sm:py-4 bg-transparent hover:bg-pink-500/10 rounded-full transition-all font-medium border-2 border-pink-500/30 hover:border-pink-500/50 inline-block text-center whitespace-nowrap min-w-[140px]">
+                  <span className="text-pink-500">Download Resume</span>
+                </a>
               </div>
             </div>
 
