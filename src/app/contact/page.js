@@ -1,22 +1,27 @@
 import Navigation from '@/components/Navigation';
+import AnimatedGradient from '@/components/AnimatedGradient';
+import { AnimatedSection, AnimatedCard } from '@/components/Animations';
 
 export default function Contact() {
     return (
-        <div className="min-h-screen bg-black text-white">
+        <div className="min-h-screen bg-black text-white relative overflow-hidden">
             <Navigation />
+            <AnimatedGradient />
 
-            <main className="pt-20 sm:pt-24 pb-12 sm:pb-16 px-4 sm:px-6">
+            <main className="relative z-10 pt-20 sm:pt-24 pb-12 sm:pb-16 px-4 sm:px-6">
                 <div className="max-w-4xl mx-auto">
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8 text-pink-500">
-                        Contact Me
-                    </h1>
+                    <AnimatedSection>
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8 text-pink-500">
+                            Contact Me
+                        </h1>
+                    </AnimatedSection>
 
                     {/* Contact Card */}
-                    <div className="relative bg-linear-to-br from-white to-pink-50 rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden hover:scale-[1.01]">
+                    <AnimatedCard className="relative bg-white/10 backdrop-blur-lg rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden border border-white/20">
                         <div className="absolute bottom-0 left-0 w-1 h-24 sm:h-32 bg-linear-to-t from-pink-500 to-transparent rounded-bl-xl sm:rounded-bl-2xl"></div>
 
-                        <p className="text-lg font-semibold text-gray-800 mb-2">I would love to work together</p>
-                        <p className="text-base text-gray-700 mb-8 text-justify">
+                        <p className="text-lg font-semibold text-white mb-2">I would love to work together</p>
+                        <p className="text-base text-gray-200 mb-8 text-justify">
                             Whether it&apos;s internships, collaborations, or project ideas, feel free to reach me out.
                         </p>
 
@@ -36,7 +41,7 @@ export default function Contact() {
                                     </a>
                                     <a
                                         href="mailto:swathipurnachandra28@gmail.com"
-                                        className="text-gray-900 hover:underline"
+                                        className="text-white hover:text-pink-400 hover:underline transition-colors"
                                     >
                                         swathipurnachandra28@gmail.com
                                     </a>
@@ -61,7 +66,7 @@ export default function Contact() {
                                         href="https://linkedin.com/in/swathi-p-404241329"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="text-gray-900 hover:underline"
+                                        className="text-white hover:text-pink-400 hover:underline transition-colors"
                                     >
                                         linkedin.com/in/swathi-p-404241329
                                     </a>
@@ -86,7 +91,7 @@ export default function Contact() {
                                         href="https://github.com/swathipurnachandra"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="text-gray-900 hover:underline"
+                                        className="text-white hover:text-pink-400 hover:underline transition-colors"
                                     >
                                         github.com/swathipurnachandra
                                     </a>
@@ -99,20 +104,13 @@ export default function Contact() {
                                     <svg className="w-6 h-6 text-pink-500 shrink-0" fill="currentColor" viewBox="0 0 24 24">
                                         <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                                     </svg>
-                                    <span className="text-gray-900">Vadapalani, Chennai, India</span>
+                                    <span className="text-white">Vadapalani, Chennai, India</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </AnimatedCard>
                 </div>
             </main>
-
-            {/* Footer */}
-            <footer className="py-8 px-6 border-t border-pink-500/30">
-                <div className="max-w-6xl mx-auto text-center text-gray-500">
-                    <p>© 2025 Swathi P. All rights reserved.</p>
-                </div>
-            </footer>
         </div>
     );
 }

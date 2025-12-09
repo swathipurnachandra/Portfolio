@@ -1,4 +1,6 @@
 import Navigation from '@/components/Navigation';
+import AnimatedGradient from '@/components/AnimatedGradient';
+import { AnimatedSection, StaggeredContainer, AnimatedCard } from '@/components/Animations';
 
 export const metadata = {
     title: 'Projects | My Portfolio',
@@ -32,37 +34,40 @@ export default function Projects() {
     ];
 
     return (
-        <div className="min-h-screen bg-black text-white">
+        <div className="min-h-screen bg-black text-white relative overflow-hidden">
             <Navigation />
+            <AnimatedGradient />
 
-            <main className="pt-20 sm:pt-24 pb-12 sm:pb-16 px-4 sm:px-6">
+            <main className="relative z-10 pt-20 sm:pt-24 pb-12 sm:pb-16 px-4 sm:px-6">
                 <div className="max-w-6xl mx-auto">
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4 text-pink-500">
-                        My Projects
-                    </h1>
-                    <p className="text-base text-gray-400 mb-12">
-                        These are some projects that I worked on recently.
-                    </p>
+                    <AnimatedSection>
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4 text-pink-500">
+                            My Projects
+                        </h1>
+                        <p className="text-base text-gray-400 mb-12">
+                            These are some projects that I worked on recently.
+                        </p>
+                    </AnimatedSection>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <StaggeredContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {projects.map((project, index) => (
-                            <div
+                            <AnimatedCard
                                 key={index}
-                                className="group relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden hover:scale-[1.02] flex flex-col"
+                                className="group relative bg-white/10 backdrop-blur-lg rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col border border-white/20"
                             >
                                 {/* Red accent border on bottom-left */}
                                 <div className="absolute bottom-0 left-0 w-1 h-32 bg-linear-to-t from-pink-500 to-transparent rounded-bl-2xl"></div>
 
                                 <div className="relative z-10 flex flex-col flex-1">
-                                    <h3 className="text-lg font-bold mb-3 text-gray-900">{project.title}</h3>
-                                    <p className="text-gray-600 mb-4 leading-relaxed text-sm text-justify">{project.description}</p>
+                                    <h3 className="text-lg font-bold mb-3 text-white">{project.title}</h3>
+                                    <p className="text-gray-200 mb-4 leading-relaxed text-sm text-justify">{project.description}</p>
 
                                     {/* Technologies */}
                                     <div className="mb-4">
-                                        <h4 className="text-xs font-semibold text-gray-700 mb-2">Technologies:</h4>
+                                        <h4 className="text-xs font-semibold text-gray-300 mb-2">Technologies:</h4>
                                         <div className="flex flex-wrap gap-2">
                                             {project.tech.map((tech, i) => (
-                                                <span key={i} className="px-2 py-1 bg-pink-100 border border-pink-200 rounded-md text-xs text-pink-700">
+                                                <span key={i} className="px-2 py-1 bg-pink-500/20 border border-pink-400/30 rounded-md text-xs text-pink-300">
                                                     {tech}
                                                 </span>
                                             ))}
@@ -71,10 +76,10 @@ export default function Projects() {
 
                                     {/* Features */}
                                     <div className="mb-4">
-                                        <h4 className="text-xs font-semibold text-gray-700 mb-2">Key Features:</h4>
+                                        <h4 className="text-xs font-semibold text-gray-300 mb-2">Key Features:</h4>
                                         <ul className="space-y-1">
                                             {project.features.map((feature, i) => (
-                                                <li key={i} className="text-xs text-gray-600 flex items-center">
+                                                <li key={i} className="text-xs text-gray-200 flex items-center">
                                                     <span className="text-pink-500 mr-2">✓</span>
                                                     {feature}
                                                 </li>
@@ -94,34 +99,29 @@ export default function Projects() {
                                         </a>
                                     </div>
                                 </div>
-                            </div>
+                            </AnimatedCard>
                         ))}
-                    </div>
+                    </StaggeredContainer>
 
                     {/* Call to Action */}
-                    <div className="mt-16 text-center relative bg-linear-to-br from-white to-pink-50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden hover:scale-[1.01]">
-                        <div className="absolute bottom-0 left-0 w-1 h-32 bg-linear-to-t from-pink-500 to-transparent rounded-bl-2xl"></div>
-                        <h2 className="text-2xl font-bold mb-4 text-gray-900">Want to see more?</h2>
-                        <p className="text-gray-700 text-base mb-6">
-                            Check out my GitHub profile to know more about my projects and contributions.
-                        </p>
-                        <a
-                            href="https://github.com/swathipurnachandra"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-block px-8 py-3 bg-pink-500 hover:bg-pink-600 text-white rounded-lg transition-colors font-medium">
-                            Visit My GitHub
-                        </a>
-                    </div>
+                    <AnimatedSection>
+                        <div className="mt-16 text-center relative bg-white/10 backdrop-blur-lg rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden border border-white/20">
+                            <div className="absolute bottom-0 left-0 w-1 h-32 bg-linear-to-t from-pink-500 to-transparent rounded-bl-2xl"></div>
+                            <h2 className="text-2xl font-bold mb-4 text-white">Want to see more?</h2>
+                            <p className="text-gray-200 text-base mb-6">
+                                Check out my GitHub profile to know more about my projects and contributions.
+                            </p>
+                            <a
+                                href="https://github.com/swathipurnachandra"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-block px-8 py-3 bg-pink-500 hover:bg-pink-600 text-white rounded-lg transition-colors font-medium">
+                                Visit My GitHub
+                            </a>
+                        </div>
+                    </AnimatedSection>
                 </div>
             </main>
-
-            {/* Footer */}
-            <footer className="py-8 px-6 border-t border-pink-500/30">
-                <div className="max-w-6xl mx-auto text-center text-gray-500">
-                    <p>© 2025 Swathi P. All rights reserved</p>
-                </div>
-            </footer>
         </div>
     );
 }

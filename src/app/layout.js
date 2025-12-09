@@ -1,5 +1,6 @@
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import PageTransition from "@/components/PageTransition";
 
 const roboto = Roboto({
   weight: ['300', '400', '500', '700'],
@@ -18,7 +19,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${roboto.variable} antialiased font-sans`}
       >
-        {children}
+        <PageTransition>
+          {children}
+        </PageTransition>
       </body>
     </html>
   );
